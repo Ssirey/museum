@@ -1,0 +1,114 @@
+html {
+    background-image: url("../img/history.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    overflow: hidden;
+}
+
+body{
+    height: 100vh ;
+    margin: 0;
+}
+
+.historyMainBlock{
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 2fr 3fr;
+    height: 100%;
+
+}
+
+.historyTextBlock{
+    padding: 10px;
+    background-color: rgba(3, 3, 3, 0.3);
+    /* border: 2px solid rgba(5, 5, 5, 0.1); */
+    border-radius: 10px;
+    /* height: 100%; */
+    overflow: auto;
+    margin: 10px 0px;
+    margin-right: 10px;
+    /* margin-bottom: 4000px; */
+}
+
+.sysBlock{
+    position: relative;
+}
+
+h1, p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;     
+    -ms-user-select: none;       
+    user-select: none;     
+}
+h1 {
+    letter-spacing: 0.1em;
+}
+
+p{
+    font-size: 24px;
+}
+
+.backBtn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    align-content: center;
+    border: 2px solid rgba(5, 5, 5, 0.2);
+    border-radius: 10px;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: rgba(5, 5, 5, 0.1);
+    /* transition: background-color 0.5s ease-in; */
+}
+
+.backBtn:hover {
+    background-color: rgba(5, 5, 5, 0.3);
+    border: 2px solid rgba(255, 255, 255, 1)
+}
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#5c5c5c;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#3a3a3a;
+}
+
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}

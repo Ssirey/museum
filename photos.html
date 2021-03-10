@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="styles/photos_style.css" rel="stylesheet">
+    <title>Фотографии Як-15</title>
+
+</head>
+<body>
+    <div id="glass"></div>
+    <div class="greedBlock">
+        <div class= "header">
+            <a class="backBtn" href="index.html">НАЗАД</a>
+            <h2 id="description"></h2>
+        </div>
+        <div class= "arrowLeft" onClick = "return changeSlideLeft()">
+            <img class="img_arrowLeft" src="img/png_arrow.png" alt="Влево">
+        </div>
+        <div class="photosContent">
+            <div class="slider">
+                <div class="slides slide1"></div>
+                <div class="slides slide2"></div>
+                <div class="slides slide3"></div>
+                <div class="slides slide4"></div>
+                <div class="slides slide5"></div>
+            </div>
+        </div>
+        <div class="arrowRight" onClick= "return changeSlideRight()">
+            <div class="bgArrow">
+                <img class="img_arrowRight" src="img/png_arrow.png" alt="Вправо">
+            </div>
+        </div>
+        <div class="footer">
+            <label id="counter">1/5</label>
+        </div>
+    </div>
+    
+</body>
+<script src="scripts/slider.js"></script>
+</html>
